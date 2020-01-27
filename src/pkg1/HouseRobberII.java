@@ -1,20 +1,20 @@
 package pkg1;
 
-import java.util.Arrays;
+//213. House Robber II
 
-//198. House Robber
-public class HouseRobber {
+public class HouseRobberII {
 	public static int rob(int[] nums) {
-		 if(nums.length ==0){
-	            return 0;
-	        }         
-        if(nums.length ==1){
+        if(nums.length == 0){
+            return 0;
+        }
+        else if(nums.length == 1){
             return nums[0];
-        }
-        if(nums.length == 2){
-            return Math.max(nums[0],nums[1]);
-        }
         
+        }
+        else if(nums.length == 2){
+            return Math.max(nums[0],nums[1]);
+        
+        }
         int [] dp = new int [nums.length+1];
         dp[0] = nums[0];
         dp[1] = Math.max(nums[0],nums[1]);
@@ -24,18 +24,17 @@ public class HouseRobber {
             
                     }
         return dp[nums.length-1];
-  
+        
     }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//int []a =new int[] {1,2,3,1};
-		//int []a =new int[] {2,7,9,3,1};
-		int []a =new int[] {};
-		
-		
-		System.out.print(rob(a));
-
+				//int []a =new int[] {2,7,9,3,1};
+				int []a =new int[] {2,3,2};
+				
+				
+				System.out.print(rob(a));
 	}
 
 }
