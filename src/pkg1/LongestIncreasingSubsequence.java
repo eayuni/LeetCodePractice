@@ -1,5 +1,6 @@
 package pkg1;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -15,7 +16,7 @@ public class LongestIncreasingSubsequence {
 	            return 1;
 	        }
 	        Arrays.fill(dp, 1);
-	        List<Integer> list = new List<>();
+	        List<Integer> list = new ArrayList<>();
 	        list.get(0);
 	        
 	        int max = 1;;
