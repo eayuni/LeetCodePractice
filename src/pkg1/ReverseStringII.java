@@ -1,6 +1,5 @@
 package pkg1;
 
-import java.util.Arrays;
 
 //541. Reverse String II
 
@@ -21,7 +20,7 @@ public class ReverseStringII {
 		
 		String a = "abcdefg";
 		int k=2;
-		System.out.print(Arrays.toString(reverseString(a,k)));
+		System.out.print(reverseString(a,k));
 		
 		
 	}
