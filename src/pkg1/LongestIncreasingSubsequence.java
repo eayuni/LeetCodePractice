@@ -16,10 +16,8 @@ public class LongestIncreasingSubsequence {
 	            return 1;
 	        }
 	        Arrays.fill(dp, 1);
-	        List<Integer> list = new ArrayList<>();
-	        list.get(0);
-	        
-	        int max = 1;;
+	              
+	        int max = 1;
 	        
 	        	for( int i= 1; i<= nums.length-1; i++) {
 	        		 

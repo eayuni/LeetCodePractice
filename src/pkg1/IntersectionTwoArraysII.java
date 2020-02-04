@@ -3,7 +3,7 @@ package pkg1;
 import java.util.Arrays;
 import java.util.HashMap;
 
-350. Intersection of Two Arrays II
+//350. Intersection of Two Arrays II
 public class IntersectionTwoArraysII {
 	
 	public static int[] intersection(int[] nums1, int[] nums2) {
