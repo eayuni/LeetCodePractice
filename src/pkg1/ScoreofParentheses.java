@@ -10,26 +10,31 @@ public class ScoreofParentheses {
 	            return 0;
 	        }
 	        
-	        Stack<Character> stack = new Stack<>();
-	       int count =0;
+	        Stack<Integer> stack = new Stack<>();
+	        stack.push(0);
+	     
 	        for(char c:  S.toCharArray()) {
-	        	
 	        	if(c == '(') {
-	        		stack.push(c);
+	        		stack.push(0);
+	        		System.out.println(stack);
 	        	}
 	        	else if(!stack.isEmpty() && c ==')') {
-	        			if(stack.pop() == '(') {
-	        				count ++;
+	        				 int v = stack.pop();
+	        		         int w = stack.pop();
+	        		        
+	        		         stack.push(w + Math.max(2 * v, 1));
+	        		       
+	        				
 	        			}
-	        			
+	        				        			
 	        		}
 	        		
-	        	
+	        return stack.pop();
 	        }
-			return count;
+			
 	        
 	        
-	    }
+	    
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
