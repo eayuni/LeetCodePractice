@@ -1,8 +1,8 @@
 package pkg1;
 
-import java.util.ArrayList;
+
 import java.util.Arrays;
-import java.util.List;
+
 
 //300. Longest Increasing Subsequence
 public class LongestIncreasingSubsequence {
@@ -20,14 +20,17 @@ public class LongestIncreasingSubsequence {
 	        int max = 1;
 	        
 	        	for( int i= 1; i<= nums.length-1; i++) {
-	        		 
 	        		for(int j = 0; j < i; j++) {
+	        			System.out.println(Arrays.toString(dp));
 	        			
+	        			System.out.println("i: "+i+" j: "+j);
+	        			System.out.println(" n i: "+nums[i]+" n j: "+nums[j]);
 	        			
 	        			if(nums[i] > nums[j]) {
-	        				dp[i]=Math.max(max, dp[i]+1);
 	        				
-	        				 System.out.println(dp[i]);
+	        				dp[i]=Math.max(dp[j], dp[i]+1);
+	        				
+	        				 //System.out.println(dp[i]);
 	                       
 	        			}
 	        			

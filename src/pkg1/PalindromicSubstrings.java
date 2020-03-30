@@ -22,7 +22,6 @@ public class PalindromicSubstrings {
 		while(end < s.length() && start>=0 && (s.charAt(start) == s.charAt(end))){
 			start--;
 			end++;
-			
 			count++;
 			
 		
